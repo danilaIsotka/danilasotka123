@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>WORLD BANK Publication</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+		integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div class="contain">
+		<div class="header">
+			<div class="block_left">
+				<div class="logo">
+					<!-- <img src="../testovoe zadanie/img/181px-World_Bank_logo.svg.png"> -->
+				</div>
+				<span class="title">WORLD BANK <br> Publications </span>
+
+			</div>
+			<div class="block_right">
+				<div class="contact">
+					<a href="tel:8-800-100-5005" class="phone"> 8-800-100-5005 </a>
+					<a href="tel:+7 (3452) 522-000" class="phone">+7 (3452) 522-000 </a>
+				</div>
+			</div>
+		</div>
+		<div class="menu_top">
+			<ul class="menu_1">
+				<li class="inner1">Кредитные карты</li>
+				<li class="inner2">Вклады</li>
+				<li class="inner3">Дебетовая карта</li>
+				<li class="inner4">Страхование</li>
+				<li class="inner5">Друзья</li>
+				<li class="inner6">Интернет-банк</li>
+			</ul>
+		</div>
+		<div class="menu_bot">
+			<ul class="menu_2">
+				<li>Главная</li>
+				<span>-</span>
+				<li>Вклады</li>
+				<span>-</span>
+				<li>Калькулятор</li>
+			</ul>
+		</div>
+		<div class="main_calc">
+			<h1 class="h1">Калькулятор</h1>
+			<form class="calc" id="theForm" method="POST" action="php/calc.php">
+				<div class="calc__container">
+					<label class="date" for="#date">Дата офромления вклада</label>
+					<input class="date1" name="date" id="datepicker" required>
+				</div>
+				<div class="price">
+					<div class="calc__container">
+						<label for="#price">Сумма вклада</label>
+						<input class="price1" name="invest" type="text" id="invest" required>
+					</div>
+					<div class="calc__container">
+						<input type="range" id="investSlider" min="1000" step="1" max="3000000" value="1000" required>
+						<div class="labels">
+							<p class="label_price">1 тыс. рублей</p>
+							<p class="label_price">3 000 000</p>
+						</div>
+					</div>
+				</div>
+				<div class="calc__container">
+					<span class="duration1">Срок вклада</span>
+					<select class="duration2" name="duration" id="duration">
+						<option value="1">1 год</option>
+						<option value="2">2 года</option>
+						<option value="3">3 года</option>
+						<option value="4">4 года</option>
+						<option value="5">5 лет</option>
+					</select>
+				</div>
+				<div class="calc__container calc__container-flex">
+					<span class="refill">Пополнение вклада</span>
+					<input class="radio1" checked type="radio" name="deposit" value="ye" required>
+					<span class="choise">Нет</span>
+					<input class="radio2" type="radio" name="deposit" value="no" required>
+					<span class="choise">Да</span>
+				</div>
+				<div class="sum">
+					<div class="calc__container">
+						<label for="#sum">Сумма пополнения вклада</label>
+						<input class="sum1" name="extrainvest" type="text" id="sum" required>
+					</div>
+					<div class="calc__container">
+						<input type="range" min="1000" step="1" max="3000000" value="1000" required>
+						<div class="labels">
+							<p class="label_price">1 тыс. рублей</p>
+							<p class="label_price">3 000 000</p>
+						</div>
+					</div>
+				</div>
+				<div class="result">
+					<button id="calculate" class="calculate">Рассчитать</button>
+					<p id="result" class="result_text">Результат:</p>
+				</div>
+			</form>
+		</div>
+		<footer class="footer">
+			<ul class="footer_inner">
+				<li class="footer_inner1">Кредитные карты</li>
+				<li class="footer_inne2r">Вклады</li>
+				<li class="footer_inner3">Дебетовая карта</li>
+				<li class="footer_inner4">Страхование</li>
+				<li class="footer_inner5">Друзья</li>
+				<li class="footer_inner6">Интернет-банк</li>
+			</ul>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

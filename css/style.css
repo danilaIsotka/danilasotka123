@@ -1,0 +1,257 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+  }
+  
+  
+  *,*:before,*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box;
+  }
+  :focus,:active {outline: none;}
+  a:focus,a:active {outline: none;}
+  
+  
+  nav,footer,header,aside {display: block;}
+  
+  
+  html,body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  }
+  
+  
+  input,button,textarea {font-family: inherit;}
+  
+  
+  input::-ms-clear {display: none;}
+  button {cursor: pointer;}
+  button::-moz-focus-inner {padding: 0;border: 0;}
+  a, a:visited {text-decoration: none;}
+  a:hover {text-decoration: none;}
+  ul li {list-style: none;}
+  img {vertical-align: top;}
+  h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+.contain{
+	padding-top: 22px;
+	width: 1024px;
+	height: 708px;
+}
+
+.header{
+	justify-content: space-between;
+	padding-left: 13px;
+	display: flex;
+	width: 990px;
+	height: 72px;
+}
+.block_left{
+	display: flex;
+}
+.logo{
+	width: 72px;
+	height: 72px;
+	background-image: url('../img/181px-World_Bank_logo.svg.png');
+	background-size: cover;
+	
+}
+.title{
+	width: auto;
+	height: auto;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 27px 0 0 15px;
+}
+.contact{
+	padding-top: 10px;
+	
+	right: 23px;
+}
+.phone{
+	line-height: 1.4;
+	display: block;
+	font-size: 19px;
+	font-weight: 700;
+	color: #eb5017;
+	width: 175px;
+	height: auto;
+}
+.menu{
+	margin: 23px 10px 30px 10px;
+
+}
+.menu_1{
+	margin-top: 12px;
+	display: flex;
+	width: 1002px;
+	height: 43px;
+}
+.inner1{
+	width: 215px;
+}
+.inner2{
+	width: 131px;
+	background: rgb(243, 55, 8);
+}
+.inner3{
+	width: 183px;
+}
+.inner4{
+	width: 159px;
+}
+.inner5{
+	width: 122px;
+}
+.inner6{
+	width: 195px;
+}
+.menu_top{
+	margin-left: 10px;
+}
+.menu_1 li {
+	display: flex;
+	background: rgba(0, 0, 0, 0.829);
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+}
+.menu_1 li:nth-child(2) {
+	background: rgb(243, 55, 8);
+}
+
+.inner3, .inner4, .inner5 {
+	border-right: 1px solid rgb(243, 55, 8);	
+}
+.menu_1 li:hover {
+	background: rgb(243, 55, 8);
+	/* transition: 0.1s linear; */
+}
+.menu_2{
+	display: flex;
+	margin: 16px 0 0 21px;
+}
+.menu_2 li {
+	text-decoration: underline;
+	text-underline-offset: 1px;
+}
+.menu_2 li:last-child{
+	text-decoration: none;
+}
+.menu_2 span{
+	margin: 0 5px;
+}
+.main_calc{
+	width: 652px;
+	height: 378px;
+	background-color: rgb(231, 229, 229);
+	margin: 25px 0 0 21px;
+}
+.h1{
+	font-size: 30px;
+	color:rgb(243, 55, 8);
+	padding: 20px 0 30px 100px;
+}
+.date{
+	margin: 0 35px 0 27px;
+}
+
+.date1{
+	overflow: visible !important;
+	width: 88px;
+}
+.calc__container{
+	margin-bottom: 20px;
+}
+.price{
+	margin: 0 0 0 90px;
+	display: flex;
+}
+.price1{
+	width: 88px;
+	margin: 0 21px 0 37px;
+}
+.duration2{
+	width: 88px;
+}
+.duration1{
+	margin: 0 37px 0 100px;
+}
+.refill{
+	margin: 0 30px 0 60px;	
+}
+.choise{
+	margin: 0 0 0 8px;
+}
+.radio2 {
+	margin-left: 23px;
+}
+.sum{
+	display: flex;
+	margin-left: 19px;
+}
+.sum1{
+	width: 88px;
+	margin: 0 20px 0 32px;
+}
+.result{
+	margin: 21px 0 0 23px;
+	display: flex;
+}
+.result_text{
+	padding-top: 10px;
+	font-size: 12px;
+	color: #2b3f02;	
+	font-weight: 600;
+	
+}
+.calculate{
+	width: 103px;
+	height: 34px;
+	background: linear-gradient(to bottom, #97eb2a, #6eab1f);
+	margin-right: 26px;
+	border-radius: 10px ;
+	border: 2px solid  rgb(214, 213, 213);
+	font-weight: 500;
+	box-shadow:  grey;
+}
+.footer{
+	margin-left: 10px;
+	width: 1002px;
+	height: 55px;
+	background: rgba(0, 0, 0, 0.829);
+	position: fixed;
+	bottom: 0;
+}
+.footer_inner{
+	display: flex;
+	width: 600px;
+	margin-top: 15px;
+	color: #ffffff;
+	padding: 13px 0 0 61px;
+	justify-content: space-between;
+	padding: 12px 14px 0 56px;
+}
+.footer_inner li {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.calc__container-flex {
+	display: flex;
+	align-items: flex-end;
+}
+
+.labels {
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+	font-style: italic;
+}
